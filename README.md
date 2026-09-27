@@ -24,4 +24,4 @@ python3 -m http.server 8765
 
 https://x.ai/bot/8jdoGq6js67DSIedm0NWG
 
-按鈕下方另有一行 Grok Bot app 深層連結：`grokbot://app/v1/bot-template?id=8jdoGq6js67DSIedm0NWG`。頁面沒有 iframe。範本是匯入用的副本，不會連結到 Des Sir 的帳戶，也不會附帶私人 token。老師須自行連接自己的 Gmail、GitHub 等服務。
+按鈕下方另有一行 Grok Bot app 深層連結：`grokbot://app/v1/bot-template?id=8jdoGq6js67DSIedm0NWG`。頁面沒有 iframe。範本是匯入用的副本，不會連結到 Desmond Sir 的帳戶，也不會附帶私人 token。老師須自行連接自己的 Gmail、GitHub 等服務。
