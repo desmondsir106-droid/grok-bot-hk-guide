@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F4EFE4" />
+    <meta
+      name="description"
+      content="香港老師用的 Grok Bot 教學頁：它是甚麼、新手五步上手、訂閱三條產品線、安全與登入，以及 AI Manager 公開範本。價錢與功能以官方結帳頁為準。資料日期 2026-09-27。"
+    />
+    <meta property="og:title" content="Grok Bot 教學｜香港老師版" />
+    <meta
+      property="og:description"
+      content="Grok Bot 是可以長期保留的 AI 隊友。本頁說明上手步驟、Cursor／SuperGrok／X Premium 三條訂閱路，以及 AI Manager 公開範本。"
+    />
+    <meta property="og:locale" content="zh_HK" />
+    <title>Grok Bot 教學｜香港老師版</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至內容</a>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#about">
+          <span class="brand-mark" aria-hidden="true">HK</span>
+          <span class="brand-text">Grok Bot 教學</span>
+        </a>
+        <p class="header-date">2026-09-27</p>
+      </div>
+      <nav class="site-nav" aria-label="頁內目錄">
+        <div class="nav-inner">
+          <a href="#about">是甚麼</a>
+          <a href="#start">上手</a>
+          <a href="#team">組隊</a>
+          <a href="#plans">訂閱</a>
+          <a href="#safety">安全</a>
+          <a href="#share">分享</a>
+          <a href="#reading">延伸</a>
+          <a href="#disclaimer">免責</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="about" aria-labelledby="hero-title">
+        <article class="hero-book">
+          <p class="hero-kicker">
+            <span class="seal">香港老師用</span>
+            <span class="hero-when">資料日期 2026-09-27</span>
+          </p>
+          <h1 id="hero-title">Grok Bot</h1>
+          <p class="hero-sub">可以長期保留的 AI 隊友</p>
+          <p class="lede">
+            Grok Bot 是可以長期保留的 AI 隊友（Bot／agent）：有名稱、有職責、有持續記憶。每隻 Bot 有自己一部雲端電腦（瀏覽器、檔案系統、終端機），可以在真實工具裏完成多步驟工作，而不是只產出對話草稿。
+          </p>
+          <p class="hero-meta">平台：桌面（macOS、Windows、Linux）及 iOS。</p>
+          <p class="actions">
+            <a class="btn" href="#start">新手 5 步上手</a>
+            <a class="btn btn-ghost" href="#plans">訂閱三條路</a>
+          </p>
+        </article>
+      </section>
+
+      <section class="block" aria-labelledby="compare-title">
+        <div class="section-heading">
+          <p class="kicker-num">對照</p>
+          <h2 id="compare-title">與普通 AI chat 有甚麼分別</h2>
+        </div>
+        <div class="sheet">
+          <p class="scroll-hint">窄螢幕可左右滑動表格。第一欄會保持可見。</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="普通 AI chat 與 Grok Bot 對照，可左右滑動">
+            <table>
+              <caption>普通 AI chat 與 Grok Bot</caption>
+              <thead>
+                <tr>
+                  <th scope="col">比較</th>
+                  <th scope="col">普通 AI chat</th>
+                  <th scope="col">Grok Bot</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">形態</th>
+                  <td>一次對話</td>
+                  <td>可長期保留的具名 Bot</td>
+                </tr>
+                <tr>
+                  <th scope="row">執行</th>
+                  <td>多數停在文字建議</td>
+                  <td>有雲端電腦，可跨應用程式與網站做完</td>
+                </tr>
+                <tr>
+                  <th scope="row">工具</th>
+                  <td>視產品而定</td>
+                  <td>連接器／plugin；沒有 API 時，可用電腦操作</td>
+                </tr>
+                <tr>
+                  <th scope="row">重複工作</th>
+                  <td>每次都要重新說明</td>
+                  <td>可做成 skill／routine</td>
+                </tr>
+                <tr>
+                  <th scope="row">平台</th>
+                  <td>—</td>
+                  <td>桌面（macOS／Windows／Linux）＋ iOS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="start" aria-labelledby="start-title">
+        <div class="section-heading">
+          <p class="kicker-num">01</p>
+          <h2 id="start-title">新手 5 步上手</h2>
+          <p class="section-note">以下按官方流程精簡，方便課堂逐步示範。</p>
+        </div>
+        <div class="sheet">
+          <ol class="steps">
+            <li>安裝 <strong>Grok Bot／Cursor 桌面 app</strong>（或於 iOS App Store 安裝）。</li>
+            <li>用<strong>同一個 Cursor 帳戶</strong>登入。沒有獨立的 Grok Bot 登入。</li>
+            <li>開第一隻 Bot：給一個短名稱、一個主要職責，以及它怎樣做。</li>
+            <li>用訊息交任務。說清楚<strong>結果、資料來源、完成標準、何時需要你批准</strong>。</li>
+            <li>服務需要登入時，Bot 會把電腦交還給你，由你自己登入。密碼不會給 Bot 看。</li>
+          </ol>
+          <aside class="note">
+            <strong>穩定之後</strong>
+            穩定的流程，可以請 Bot 跟隨你做一次，然後收成 skill 或 routine。
+          </aside>
+        </div>
+      </section>
+
+      <section class="block" id="team" aria-labelledby="team-title">
+        <div class="section-heading">
+          <p class="kicker-num">02</p>
+          <h2 id="team-title">為何使用 Bot 組隊</h2>
+          <p class="section-note">多隻專責 Bot，由 AI Manager 統籌。Des Sir 會分享 AI Manager。</p>
+        </div>
+        <div class="sheet">
+          <p>
+            每隻 Bot 都有名稱、職責與持續記憶。重複的流程可以做成 skill 或 routine，不必每次重新交代。
+          </p>
+          <p>
+            因此可以建立多隻專責 Bot，再由 AI Manager 統籌。Des Sir 會分享這隻 AI Manager。
+          </p>
+          <p><strong>用 AI Manager 建成隊。</strong></p>
+          <p>匯入方式、範本性質與分享連結，見下方<a href="#share">分享 AI Manager</a>。</p>
+        </div>
+      </section>
+
+      <section class="block" id="plans" aria-labelledby="plans-title">
+        <div class="section-heading">
+          <p class="kicker-num">03</p>
+          <h2 id="plans-title">訂閱：三條產品線</h2>
+          <p class="section-note">
+            現時不是「一個 Grok 訂閱」，而是 <strong>Cursor、SuperGrok、X Premium／Premium+</strong> 三條路。它們不是同一個計劃，也不會自動互通全部功能；只是部分可以連結，用來開啟 Grok Bot 用量。
+          </p>
+        </div>
+
+        <nav class="subnav" aria-label="訂閱一節目錄">
+          <a href="#plans-lines">三條入口</a>
+          <a href="#plans-cursor">Cursor</a>
+          <a href="#plans-supergrok">SuperGrok</a>
+          <a href="#plans-x">X</a>
+          <a href="#plans-choose">訂哪一條</a>
+          <a href="#plans-myths">常見誤會</a>
+          <a href="#plans-practice">實務提醒</a>
+        </nav>
+
+        <div class="sheet" id="plans-lines">
+          <h3>你有哪幾種訂閱入口</h3>
+          <p class="scroll-hint">窄螢幕可左右滑動表格。第一欄會保持可見。</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="訂閱入口一覽，可左右滑動">
+            <table>
+              <caption>入口一覽</caption>
+              <thead>
+                <tr>
+                  <th scope="col">入口</th>
+                  <th scope="col">賣甚麼</th>
+                  <th scope="col">主要用來做甚麼</th>
+                  <th scope="col">Grok Bot</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Cursor（cursor.com）</th>
+                  <td>編程 IDE／Agent／Cloud agents</td>
+                  <td>寫程式、repo agent。付費個人計劃及 Teams 已包含 Grok Bot。</td>
+                  <td><span class="tag tag-yes">已包含</span> Pro／Pro+／Ultra／Teams</td>
+                </tr>
+                <tr>
+                  <th scope="row">SuperGrok（xAI／grok.com）</th>
+                  <td>Grok 聊天、Imagine、Voice、Build 等</td>
+                  <td>純 AI 用量與功能。由 $30 起可連結；Lite 不包括。</td>
+                  <td><span class="tag tag-yes">可連結</span> Lite、Team、Enterprise 不可以</td>
+                </tr>
+                <tr>
+                  <th scope="row">X Premium／Premium+</th>
+                  <td>X 平台特權，以及部分 Grok</td>
+                  <td>認證、減少廣告、創作變現等。</td>
+                  <td><span class="tag tag-yes">可連結</span> 官方 Bot 連結名單通常只有 Premium+。較低級 Premium 一般不在此名單。</td>
+                </tr>
+                <tr>
+                  <th scope="row">企業／Teams</th>
+                  <td>Cursor Teams／Enterprise、SuperGrok Team／Enterprise</td>
+                  <td>公司帳戶。</td>
+                  <td><span class="tag tag-no">SuperGrok 企業不可以</span> Team／Enterprise 的 SuperGrok 不支援連結到個人 Grok Bot。Cursor Teams 付費計劃則包含 Bot。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="source">
+            重點：「訂閱 Grok」可以是訂 Cursor、訂 SuperGrok，或訂 X。三條路，產品不一樣。
+          </p>
+          <aside class="note">
+            <strong>另一條線，本頁不展開</strong>
+            另外還有 Grok API／開發者計費（按 token），與消費者訂閱是另一條線。
+          </aside>
+          <p class="source">
+            約價（美元，以官方結帳頁為準）：Cursor 為 Pro $20、Pro+ $60、Ultra $200、Teams Standard $40／人、Teams Premium $120／人。SuperGrok 為 Lite（報道約 $10，無 Bot）、SuperGrok $30、Plus $100、Heavy（報道約 $300）。X 的價格看地區與 App Store。
+          </p>
+        </div>
+
+        <div class="sheet" id="plans-cursor">
+          <h3>A. Cursor（個人／團隊）</h3>
+          <p class="scroll-hint">窄螢幕可左右滑動表格。第一欄會保持可見。</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Cursor 計劃對照，可左右滑動">
+            <table>
+              <caption>Cursor 計劃</caption>
+              <thead>
+                <tr>
+                  <th scope="col">計劃</th>
+                  <th scope="col">約價（官方）</th>
+                  <th scope="col">包含 Grok Bot？</th>
+                  <th scope="col">還有甚麼</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Hobby</th>
+                  <td>免費</td>
+                  <td>試用額度／有限</td>
+                  <td>有限 Agent／Composer</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pro</th>
+                  <td>$20／月</td>
+                  <td><span class="tag tag-yes">有</span> 每週用量，低於 Pro+</td>
+                  <td>IDE Agent、frontier models、MCP／skills、cloud agents 等</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pro+</th>
+                  <td>$60／月</td>
+                  <td><span class="tag tag-yes">有</span> 更寬的每週用量</td>
+                  <td>與 Pro 相同範圍，用量更高</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ultra</th>
+                  <td>$200／月</td>
+                  <td><span class="tag tag-yes">有</span> 最高個人每週用量</td>
+                  <td>與 Pro 相同範圍，最高檔</td>
+                </tr>
+                <tr>
+                  <th scope="row">Teams Standard</th>
+                  <td>$40／人／月</td>
+                  <td><span class="tag tag-yes">有</span> 每名成員都有</td>
+                  <td>團隊管理、共享 context 等</td>
+                </tr>
+                <tr>
+                  <th scope="row">Teams Premium</th>
+                  <td>$120／人／月</td>
+                  <td><span class="tag tag-yes">有</span></td>
+                  <td>更高的團隊用量等</td>
+                </tr>
+                <tr>
+                  <th scope="row">Enterprise</th>
+                  <td>自訂</td>
+                  <td>需按帳戶安排</td>
+                  <td>合規、發票、進階管控</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="source">
+            來源：
+            <a href="https://cursor.com/help/account-and-billing/pricing">cursor.com/help/account-and-billing/pricing</a>
+            、
+            <a href="https://cursor.com/pricing">cursor.com/pricing</a>
+          </p>
+        </div>
+
+        <div class="sheet" id="plans-supergrok">
+          <h3>B. SuperGrok（xAI）</h3>
+          <p>
+            官方定價頁可見的級別包括：Free、SuperGrok Lite、SuperGrok、SuperGrok Plus、SuperGrok Heavy（另有 Business／Enterprise）。
+          </p>
+          <p class="scroll-hint">窄螢幕可左右滑動表格。第一欄會保持可見。</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="SuperGrok 計劃對照，可左右滑動">
+            <table>
+              <caption>SuperGrok 計劃</caption>
+              <thead>
+                <tr>
+                  <th scope="col">計劃</th>
+                  <th scope="col">約價（官方／公開頁）</th>
+                  <th scope="col">Grok 聊天／Imagine 等</th>
+                  <th scope="col">可連結開 Grok Bot？</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Free</th>
+                  <td>$0</td>
+                  <td>有限制</td>
+                  <td><span class="tag tag-no">不可以</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">SuperGrok Lite</th>
+                  <td>公開報道約 $10／月（請以 x.ai 結帳頁為準）</td>
+                  <td>入門用量</td>
+                  <td><span class="tag tag-no">不可以</span> 官方明確不包括</td>
+                </tr>
+                <tr>
+                  <th scope="row">SuperGrok</th>
+                  <td>$30／月</td>
+                  <td>Grok 4.6、更高限額、Imagine／影片、Grok Bot access</td>
+                  <td><span class="tag tag-yes">可以</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">SuperGrok Plus</th>
+                  <td>$100／月</td>
+                  <td>SuperGrok 全部，加上 1080p、更高的 Chat／Imagine／Voice／Build、尖峰優先</td>
+                  <td><span class="tag tag-yes">可以</span> 連結用量高於 SuperGrok</td>
+                </tr>
+                <tr>
+                  <th scope="row">SuperGrok Heavy</th>
+                  <td>公開報道約 $300／月（請以結帳頁為準）</td>
+                  <td>最高檔 Grok 用量</td>
+                  <td><span class="tag tag-yes">可以</span> 連結用量最高</td>
+                </tr>
+                <tr>
+                  <th scope="row">SuperGrok Team／Enterprise</th>
+                  <td>企業</td>
+                  <td>企業功能</td>
+                  <td><span class="tag tag-no">不可以</span> 不支援連結到個人 Grok Bot</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            相對 Free 或較低級別，SuperGrok 多出的通常是：更高的 rate limit、較新或較強的模型、Imagine／影片的質素與長度、尖峰優先（Plus／Heavy），以及（Lite 除外）Grok Bot 資格。
+          </p>
+          <p class="source">
+            來源：
+            <a href="https://x.ai/pricing">x.ai/pricing</a>
+            、
+            <a href="https://cursor.com/help/grok-bot/supergrok">cursor.com/help/grok-bot/supergrok</a>
+          </p>
+        </div>
+
+        <div class="sheet" id="plans-x">
+          <h3>C. X 訂閱</h3>
+          <p class="scroll-hint">窄螢幕可左右滑動表格。第一欄會保持可見。</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="X 訂閱與 Grok Bot 對照，可左右滑動">
+            <table>
+              <caption>X 訂閱</caption>
+              <thead>
+                <tr>
+                  <th scope="col">計劃</th>
+                  <th scope="col">主要買到甚麼</th>
+                  <th scope="col">Grok／Grok Bot</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">X Basic／Premium（較低級）</th>
+                  <td>平台特權（認證、較少廣告等，視級別而定）</td>
+                  <td>通常可以在 X 裏面使用 Grok，但限額較緊。Cursor 官方「可連結開 Grok Bot」的名單只有 Premium+。</td>
+                </tr>
+                <tr>
+                  <th scope="row">X Premium+</th>
+                  <td>X 最高級平台特權，以及較強的 Grok（在 X／連結生態）</td>
+                  <td><span class="tag tag-yes">可以</span> 以 Link X Account 開啟 Grok Bot。連結用量低於 SuperGrok Plus。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="source">
+            X 的月費請到 X → 設定 → Premium，查看你所在地區的價格。來源：
+            <a href="https://cursor.com/help/grok-bot/plans">cursor.com/help/grok-bot/plans</a>
+          </p>
+        </div>
+
+        <div class="sheet" id="plans-choose">
+          <h3>我想要哪樣，應該訂哪一條</h3>
+          <p class="scroll-hint">窄螢幕可左右滑動表格。第一欄會保持可見。</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="按需求選擇訂閱入口，可左右滑動">
+            <table>
+              <caption>按需求選擇</caption>
+              <thead>
+                <tr>
+                  <th scope="col">你想要</th>
+                  <th scope="col">建議入口</th>
+                  <th scope="col">備註</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">用 Cursor 寫程式／Agent</th>
+                  <td>Cursor Pro 起</td>
+                  <td>Pro 已包含 Grok Bot</td>
+                </tr>
+                <tr>
+                  <th scope="row">用 Grok Bot（桌面助手）</th>
+                  <td>Cursor 付費，或 SuperGrok／Plus／Heavy，或 X Premium+（連結）</td>
+                  <td>Lite 與 Team 的 SuperGrok 不可以</td>
+                </tr>
+                <tr>
+                  <th scope="row">主要在 grok.com／App 大量對話、生成圖像與影片</th>
+                  <td>SuperGrok 起（重度則看 Plus／Heavy）</td>
+                  <td>不代替 Cursor IDE</td>
+                </tr>
+                <tr>
+                  <th scope="row">主要想要 X 認證、減少廣告、創作</th>
+                  <td>X Premium／Premium+</td>
+                  <td>若要連結 Bot，選 Premium+</td>
+                </tr>
+                <tr>
+                  <th scope="row">既要寫程式，又要 Bot，而且額度要高</th>
+                  <td>升級 Cursor Pro+／Ultra（或 Teams）</td>
+                  <td>不要指望再購買 SuperGrok 來增加 Bot 額度</td>
+                </tr>
+                <tr>
+                  <th scope="row">公司團隊</th>
+                  <td>Cursor Teams／Enterprise</td>
+                  <td>SuperGrok 企業計劃不用來連結個人 Bot</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="sheet" id="plans-myths">
+          <h3>常見誤會</h3>
+          <p>課堂可以先記一句：<strong>Cursor ≠ SuperGrok ≠ X Premium。</strong></p>
+          <ol class="myths">
+            <li>
+              <strong class="myth-title">Cursor ≠ SuperGrok ≠ X Premium</strong>
+              三條路都可以接觸到 Grok，但不是同一個計劃。Cursor 管編程，以及付費計劃內的 Grok Bot。SuperGrok 管 Grok 產品用量。X Premium+ 管 X 平台，並可連結 Bot。
+            </li>
+            <li>
+              <strong class="myth-title">連結 ≠ 變成 Cursor Pro</strong>
+              連結 SuperGrok 或 Premium+，得到的是 <strong>Grok Bot 用量授權</strong>，不會因此變成 Cursor Pro 或 Ultra。你買了 Cursor 哪一級，就仍然是那一級。舊日 Heavy 附送 Ultra 的促銷已經結束；已經領取的可能仍按 grandfather 安排保留，新的連結不再附送。
+            </li>
+            <li>
+              <strong class="myth-title">Bot 額度不會疊加</strong>
+              Cursor 與 SuperGrok／Premium+ <strong>不會 stack</strong> Bot 的每週額度。兩個都買，兩份費用都要支付，Grok Bot 額度不會加倍。每週額度用完後，可以用 Cursor 的 on-demand 另付費用繼續。
+            </li>
+            <li>
+              <strong class="myth-title">SuperGrok 一般 ≠ X 平台特權</strong>
+              SuperGrok 購買的是 Grok／xAI 的 AI 能力（更高限額、Imagine／影片，部分級別有 Grok Bot）。它一般不包括 X 的藍剔、去除廣告、創作收入分成。X Premium+ 購買的是 X 平台，加上較強的 Grok，也可以連結開啟 Grok Bot。又要較高的 Grok 用量、又要 X 最高特權，通常要分開考慮（SuperGrok 加上 X，或只購買 Premium+，若你的需要只是「夠用的 Grok 加上 X」）。網上有文章指 Heavy 曾經或將會附帶 Premium+——以你帳戶的結帳頁，以及 xAI／X 條款為準。Cursor 文件沒有寫「SuperGrok 等於送上 X」。
+            </li>
+            <li>
+              <strong class="myth-title">連結是永久綁定</strong>
+              官方指出連結永久綁定，不能自行解除綁定並轉移帳戶。連結之前，先確認 Cursor 帳戶正確。
+            </li>
+          </ol>
+
+          <h3 class="follow">Cursor 付費與 SuperGrok 並排看</h3>
+          <p class="scroll-hint">窄螢幕可左右滑動表格。第一欄會保持可見。</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-label="Cursor 付費與 SuperGrok 對照，可左右滑動">
+            <table>
+              <caption>Cursor 付費與 SuperGrok</caption>
+              <thead>
+                <tr>
+                  <th scope="col">比較</th>
+                  <th scope="col">Cursor 付費（Pro／Pro+／Ultra）</th>
+                  <th scope="col">SuperGrok（xAI）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">主產品</th>
+                  <td>Cursor 編輯器／Agent／寫程式</td>
+                  <td>Grok 網頁／App 的聊天、Imagine、Voice、Build 等</td>
+                </tr>
+                <tr>
+                  <th scope="row">Grok Bot</th>
+                  <td>已包含（用同一個 Cursor 帳戶登入即可）</td>
+                  <td>要先 Link Grok Account，才把 Bot 用量撥到你的 Cursor／Grok Bot 帳戶</td>
+                </tr>
+                <tr>
+                  <th scope="row">連結之後有沒有 Cursor Ultra／Pro</th>
+                  <td>你購買哪一級，就是哪一級</td>
+                  <td>官方現時說明：連結只是「Grok Bot 用量授權」，不會變成 Cursor Pro／Ultra。舊日 Heavy 附送 Ultra 的促銷已結束；已領取的可能仍 grandfather；新連結不再附送。</td>
+                </tr>
+                <tr>
+                  <th scope="row">兩邊用量可否相加</th>
+                  <td>—</td>
+                  <td>不可以疊加。Cursor 與 SuperGrok／Premium+ 不會加總 Grok Bot 每週額度。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ul class="plain-list">
+            <li>只購買 Cursor Pro：有 Cursor 與 Grok Bot；這不等於你在 grok.com 擁有完整 SuperGrok 的高限額。</li>
+            <li>只購買 SuperGrok 再連結：有 Grok 產品與 Grok Bot 用量；這不等於你有 Cursor 編程訂閱（IDE 仍可能是 Hobby／免費）。</li>
+            <li>兩個都買：兩份費用都要支付，Grok Bot 額度不加倍。每週額度用完，可以用 Cursor 的 on-demand 另付費用繼續。</li>
+          </ul>
+          <blockquote class="quote">
+            資料包撮述官方文件的意思：連結 SuperGrok 或 X Premium+ 是用量授權，不是 Cursor 計劃，而且不會疊加。出處：
+            <a href="https://cursor.com/help/grok-bot/plans">cursor.com/help/grok-bot/plans</a>
+          </blockquote>
+        </div>
+
+        <div class="sheet" id="plans-practice">
+          <h3>實務提醒</h3>
+          <ol class="plain-list">
+            <li>現時使用中的 Grok Bot，用量計在 <strong>Cursor 帳戶</strong>（每週額度，加上可選的 on-demand），不是「再買多一個就自動加倍」。</li>
+            <li>若已經有 Cursor Pro／Pro+／Ultra，通常不必再為了 Bot 去買 SuperGrok；除非你想要 grok.com 那邊的聊天與 Imagine 額度。</li>
+            <li>若只想要 Bot、不必寫程式：可以考慮 SuperGrok $30，或 X Premium+（若你本來就要用 X），然後再連結。連結永久綁定，不能自行解除綁定並轉移帳戶，連結前請確認 Cursor 帳戶正確。</li>
+            <li>SpaceXAI／產品方曾公開表示會整合 Grok／Cursor 訂閱（約 2026-09 的消息，稱「數週內」），結構可能再變。訂立較長合約前，可再查看最新公告。</li>
+          </ol>
+          <p class="source">
+            本節來源：
+            <a href="https://cursor.com/help/grok-bot/plans">計劃／計費</a>、
+            <a href="https://cursor.com/help/grok-bot/supergrok">SuperGrok 連結</a>、
+            <a href="https://x.ai/pricing">x.ai/pricing</a>、
+            <a href="https://x.ai/news/grok-bot-more-plans">更多計劃消息</a>、
+            <a href="https://cursor.com/pricing">cursor.com/pricing</a>
+            。價錢以結帳頁為準；X 平台價格常因地區與 App Store 而變。
+          </p>
+        </div>
+      </section>
+
+      <section class="block" id="safety" aria-labelledby="safety-title">
+        <div class="section-heading">
+          <p class="kicker-num">04</p>
+          <h2 id="safety-title">安全與登入</h2>
+          <p class="section-note">講解或示範之前，先說明這三點。</p>
+        </div>
+        <div class="sheet">
+          <ul class="plain-list">
+            <li>Bot 可以操作真實帳戶、檔案與網頁。只授權需要的範圍。</li>
+            <li><strong>不要</strong>把 API key 或密碼貼到 chat 或普通檔案。請使用秘密或安全的儲存方式。</li>
+            <li>有些網站會阻擋自動化、工作階段（session）過期，或需要人手步驟（2FA／captcha）。這些時候，Bot 會交還給你。</li>
+          </ul>
+          <aside class="warn">
+            <strong>登入</strong>
+            沒有獨立的 Grok Bot 登入，使用同一個 Cursor 帳戶。服務需要登入時，由你自己在交還的電腦上完成；密碼不會給 Bot 看。
+          </aside>
+        </div>
+      </section>
+
+      <section class="block" id="share" aria-labelledby="share-title">
+        <div class="section-heading">
+          <p class="kicker-num">05</p>
+          <h2 id="share-title">分享 AI Manager</h2>
+          <p class="section-note">用 AI Manager 建成隊。Des Sir 以公開 Bot 範本分享，供老師匯入自己的副本。</p>
+        </div>
+        <div class="sheet">
+          <h3>這隻 Bot 做甚麼</h3>
+          <p>
+            AI Manager 負責統籌多隻專責 Bot。分享出去的是一個公開 Bot 範本（Public Bot template）：匯入的是一份副本（import copy），不會連結到 Des Sir 的帳戶。
+          </p>
+
+          <h3 class="follow">老師怎樣用</h3>
+          <ol class="steps">
+            <li>按下方「匯入 AI Manager」，開啟公開範本。</li>
+            <li>在 Grok Bot 內匯入。</li>
+            <li>回答上手設定（getting-started setup）。</li>
+            <li>自行連接自己的 Gmail、GitHub 等服務。範本不會附帶私人 token。</li>
+          </ol>
+
+          <div class="share-drop">
+            <p class="share-drop-label">公開 Bot 範本</p>
+            <p class="share-actions">
+              <a class="btn" id="ai-manager-share-url" href="https://x.ai/bot/8jdoGq6js67DSIedm0NWG">匯入 AI Manager</a>
+            </p>
+            <p class="share-deeplink">
+              已安裝 Grok Bot app 的話，這個連結會在 app 內開啟：
+              <a href="grokbot://app/v1/bot-template?id=8jdoGq6js67DSIedm0NWG">grokbot://app/v1/bot-template?id=8jdoGq6js67DSIedm0NWG</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="reading" aria-labelledby="reading-title">
+        <div class="section-heading">
+          <p class="kicker-num">06</p>
+          <h2 id="reading-title">延伸閱讀</h2>
+          <p class="section-note">以下為資料包所引的官方頁面。講解時可作跟進閱讀，不代替結帳頁。</p>
+        </div>
+        <div class="sheet">
+          <ul class="link-list">
+            <li>
+              <a class="link-name" href="https://cursor.com/docs/grok-bot">概覽</a>
+              <span class="url">https://cursor.com/docs/grok-bot</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://cursor.com/docs/grok-bot/get-started">開始</a>
+              <span class="url">https://cursor.com/docs/grok-bot/get-started</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://cursor.com/help/grok-bot/getting-started">Help 上手</a>
+              <span class="url">https://cursor.com/help/grok-bot/getting-started</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://docs.x.ai/grok-bot/overview">xAI 概覽</a>
+              <span class="url">https://docs.x.ai/grok-bot/overview</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://x.ai/news/introducing-grok-bot">發佈介紹</a>
+              <span class="url">https://x.ai/news/introducing-grok-bot</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://cursor.com/help/grok-bot/plans">計劃／計費</a>
+              <span class="url">https://cursor.com/help/grok-bot/plans</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://cursor.com/help/grok-bot/supergrok">SuperGrok 連結</a>
+              <span class="url">https://cursor.com/help/grok-bot/supergrok</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://cursor.com/pricing">Cursor 定價</a>
+              <span class="url">https://cursor.com/pricing</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://cursor.com/help/account-and-billing/pricing">Cursor 帳戶與計費定價</a>
+              <span class="url">https://cursor.com/help/account-and-billing/pricing</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://x.ai/pricing">xAI 定價</a>
+              <span class="url">https://x.ai/pricing</span>
+            </li>
+            <li>
+              <a class="link-name" href="https://x.ai/news/grok-bot-more-plans">更多計劃消息</a>
+              <span class="url">https://x.ai/news/grok-bot-more-plans</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block" id="disclaimer" aria-labelledby="disclaimer-title">
+        <div class="section-heading">
+          <p class="kicker-num">07</p>
+          <h2 id="disclaimer-title">免責</h2>
+        </div>
+        <div class="sheet">
+          <p>價錢與功能以官方結帳頁及幫助文件為準。產品整合可能再變。</p>
+          <p>
+            標明「公開報道約」的數字（SuperGrok Lite、SuperGrok Heavy）來自公開報道，請以 x.ai 結帳頁為準。X 的月費視地區與 App Store 而定。
+          </p>
+          <p>
+            SpaceXAI／產品方曾公開表示會整合 Grok／Cursor 訂閱（約 2026-09 的消息，稱「數週內」）。訂立較長合約前，請再查看最新公告。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          內容整理自 2026-09-27 研究資料包（Web Research；官方公開資料），供香港老師講解 Grok Bot。價錢與功能以官方結帳頁及幫助文件為準。AI Manager 以公開範本分享，匯入的是副本。
+        </p>
+        <p>官方來源：</p>
+        <ol class="source-list">
+          <li><a href="https://cursor.com/docs/grok-bot">https://cursor.com/docs/grok-bot</a></li>
+          <li><a href="https://cursor.com/docs/grok-bot/get-started">https://cursor.com/docs/grok-bot/get-started</a></li>
+          <li><a href="https://cursor.com/help/grok-bot/getting-started">https://cursor.com/help/grok-bot/getting-started</a></li>
+          <li><a href="https://cursor.com/help/grok-bot/plans">https://cursor.com/help/grok-bot/plans</a></li>
+          <li><a href="https://cursor.com/help/grok-bot/supergrok">https://cursor.com/help/grok-bot/supergrok</a></li>
+          <li><a href="https://cursor.com/pricing">https://cursor.com/pricing</a></li>
+          <li><a href="https://cursor.com/help/account-and-billing/pricing">https://cursor.com/help/account-and-billing/pricing</a></li>
+          <li><a href="https://docs.x.ai/grok-bot/overview">https://docs.x.ai/grok-bot/overview</a></li>
+          <li><a href="https://x.ai/news/introducing-grok-bot">https://x.ai/news/introducing-grok-bot</a></li>
+          <li><a href="https://x.ai/pricing">https://x.ai/pricing</a></li>
+          <li><a href="https://x.ai/news/grok-bot-more-plans">https://x.ai/news/grok-bot-more-plans</a></li>
+        </ol>
+      </div>
+    </footer>
+  </body>
+</html>
