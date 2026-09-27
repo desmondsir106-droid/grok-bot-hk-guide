@@ -609,7 +609,7 @@ tbody th {
 .share-drop {
   margin-top: 1rem;
   padding: 1.15rem 1rem 1.2rem;
-  border: 1.5px dashed rgba(180, 35, 42, 0.55);
+  border: 1px solid rgba(180, 35, 42, 0.28);
   border-radius: 0.95rem;
   background:
     radial-gradient(circle at 100% 0%, rgba(176, 137, 62, 0.18), transparent 46%),
@@ -624,17 +624,20 @@ tbody th {
   letter-spacing: 0.12em;
 }
 
-.share-drop-value {
-  margin-top: 0.35rem;
-  font-family: var(--font-serif);
-  font-size: clamp(1.45rem, 4vw, 1.85rem);
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: var(--seal);
+.share-actions {
+  margin-top: 0.85rem;
 }
 
-.share-drop-value a {
-  letter-spacing: 0.04em;
+.share-deeplink {
+  max-width: 36rem;
+  margin: 0.85rem auto 0;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.share-deeplink a {
+  overflow-wrap: anywhere;
 }
 
 .quote {

@@ -570,26 +570,26 @@
         <div class="sheet">
           <h3>這隻 Bot 做甚麼</h3>
           <p>
-            AI Manager 負責統籌多隻專責 Bot。分享出去的是一個公開 Bot 範本（Public Bot template）：匯入的是一份副本（import copy），不會連結到我們的帳戶。
+            AI Manager 負責統籌多隻專責 Bot。分享出去的是一個公開 Bot 範本（Public Bot template）：匯入的是一份副本（import copy），不會連結到 Des Sir 的帳戶。
           </p>
 
           <h3 class="follow">老師怎樣用</h3>
           <ol class="steps">
-            <li>開啟分享連結。</li>
+            <li>按下方「匯入 AI Manager」，開啟公開範本。</li>
             <li>在 Grok Bot 內匯入。</li>
             <li>回答上手設定（getting-started setup）。</li>
             <li>自行連接自己的 Gmail、GitHub 等服務。範本不會附帶私人 token。</li>
           </ol>
 
-          <!--
-            一行為之：只替換下方 id="ai-manager-share-url" 那一行。
-            有正式公開範本連結時，改成：
-            <p class="share-drop-value" id="ai-manager-share-url"><a href="在此貼上公開範本連結">開啟並匯入 AI Manager 範本</a></p>
-            不要加入 grokbot:// 網址，也不要加入 iframe。
-          -->
           <div class="share-drop">
-            <p class="share-drop-label">Bot 範本／分享連結</p>
-            <p class="share-drop-value" id="ai-manager-share-url">即將補上</p>
+            <p class="share-drop-label">公開 Bot 範本</p>
+            <p class="share-actions">
+              <a class="btn" id="ai-manager-share-url" href="https://x.ai/bot/8jdoGq6js67DSIedm0NWG">匯入 AI Manager</a>
+            </p>
+            <p class="share-deeplink">
+              已安裝 Grok Bot app 的話，這個連結會在 app 內開啟：
+              <a href="grokbot://app/v1/bot-template?id=8jdoGq6js67DSIedm0NWG">grokbot://app/v1/bot-template?id=8jdoGq6js67DSIedm0NWG</a>
+            </p>
           </div>
         </div>
       </section>
@@ -670,7 +670,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <p>
-          內容整理自 2026-09-27 研究資料包（Web Research；官方公開資料），供香港老師講解 Grok Bot。價錢與功能以官方結帳頁及幫助文件為準。AI Manager 的 Bot 範本連結尚未貼上，頁內標明「即將補上」。
+          內容整理自 2026-09-27 研究資料包（Web Research；官方公開資料），供香港老師講解 Grok Bot。價錢與功能以官方結帳頁及幫助文件為準。AI Manager 以公開範本分享，匯入的是副本。
         </p>
         <p>官方來源：</p>
         <ol class="source-list">

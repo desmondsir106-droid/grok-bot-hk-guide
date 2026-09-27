@@ -18,8 +18,10 @@ python3 -m http.server 8765
 
 此庫不需要建置。在倉庫設定裡把 Pages 的來源選為分支根目錄（`/`），網站即由 `index.html` 提供。
 
-## 補上 AI Manager 分享連結
+## AI Manager 分享連結
 
-分享位在 `index.html` 的 `id="ai-manager-share-url"`。現時文字是「即將補上」。
+主按鈕在 `index.html` 的 `id="ai-manager-share-url"`，指向公開範本：
 
-日後只替換那一行，例如改成正式公開範本連結。不要加入 `grokbot://` 網址，也不要加入 iframe。範本是匯入用的副本，不會連結到分享者的帳戶，也不會附帶私人 token。
+https://x.ai/bot/8jdoGq6js67DSIedm0NWG
+
+按鈕下方另有一行 Grok Bot app 深層連結：`grokbot://app/v1/bot-template?id=8jdoGq6js67DSIedm0NWG`。頁面沒有 iframe。範本是匯入用的副本，不會連結到 Des Sir 的帳戶，也不會附帶私人 token。老師須自行連接自己的 Gmail、GitHub 等服務。
