@@ -774,6 +774,73 @@ code {
   background: var(--seal-deep);
 }
 
+.lede-link {
+  color: #fffaf1;
+  overflow-wrap: anywhere;
+}
+
+.lede-link:hover,
+.lede-link:focus-visible {
+  color: var(--gold-soft);
+}
+
+.tpl-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.tpl-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.05rem 1rem 1.1rem;
+  background: var(--cream);
+  border: 1px solid rgba(28, 36, 48, 0.08);
+  border-radius: var(--radius);
+}
+
+.tpl-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  letter-spacing: 0.05em;
+}
+
+.tpl-card p {
+  margin-top: 0.45rem;
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+}
+
+.tpl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tpl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.9rem;
+  margin-top: auto !important;
+  padding-top: 0.8rem;
+}
+
+.tpl-deeplink {
+  font-size: 0.85rem;
+}
+
+@media (min-width: 700px) {
+  .tpl-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .tpl-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 760px) {
   .scroll-hint {
     display: block;
