@@ -1,6 +1,6 @@
 # Grok Bot 教學｜香港老師版
 
-給香港老師講解 Grok Bot 的靜態網頁：新手 5 步上手、Primary Bot、官方指南三篇重點、四個香港版 Bot 指令、Bot 專屬電郵、近期五個新功能、The X Subscription 訂閱方案、安全與登入，以及 AI Manager 公開範本。
+給香港老師講解 Grok Bot 的靜態網頁：新手 5 步上手、Primary Bot、官方指南三篇重點、18 個香港版 Bot 模板（模板庫 templates.html）、Bot 專屬電郵、近期五個新功能、The X Subscription 訂閱方案、安全與登入，以及 AI Manager 公開範本。
 
 內容最初整理自 **2026-09-27**（第 44 集），**2026-10-27** 按第 50 集資料更新。價錢與功能以官方結帳頁為準。
 

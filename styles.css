@@ -418,6 +418,112 @@ main {
   overflow-wrap: anywhere;
 }
 
+.vrow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.vcard {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem 0.7rem 0.9rem;
+  background: var(--cream);
+  border: 1px solid rgba(28, 36, 48, 0.08);
+  border-radius: var(--radius);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vcard:hover,
+.vcard:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(28, 36, 48, 0.14);
+  color: var(--ink);
+}
+
+.vthumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  background: var(--ink);
+}
+
+.vthumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vplay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3rem;
+  height: 2.1rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.6rem;
+  background: rgba(180, 35, 42, 0.92);
+}
+
+.vplay::after {
+  content: "";
+  position: absolute;
+  left: 52%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 0.45rem 0 0.45rem 0.75rem;
+  border-color: transparent transparent transparent #fff;
+}
+
+.vnew {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--seal);
+  color: #fffaf1;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.vmeta {
+  margin-top: 0.65rem;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.vtitle {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .vrow {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 78%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.4rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vcard {
+    scroll-snap-align: start;
+  }
+}
+
 .sheet h3 {
   margin-bottom: 0.45rem;
   font-size: 1.15rem;
@@ -965,5 +1071,37 @@ code {
 
   a {
     text-decoration: underline;
+  }
+}
+
+.tplcats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.tplcat {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.tplcat b {
+  display: block;
+  color: var(--seal);
+  font-size: 0.95rem;
+}
+
+.tplcat span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .tplcats {
+    grid-template-columns: 1fr;
   }
 }
