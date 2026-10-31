@@ -338,7 +338,7 @@ https://x.ai/bot/guides/how-i-run-multiple-teams-of-grok-bots
           <h3>使用方法</h3>
           <ol class="steps">
             <li>在 Grok Bot 開一個新 Bot，把指令整段貼上，並在最後加一句「請記住以上設定」。</li>
-            <li>先把指令中所有【 】內的內容改成你自己的資料（例如接放學時間、重要聯絡人）。</li>
+            <li>不用先改指令中的【 】：第一次對話時，Bot 會逐項問你（例如接放學時間、重要聯絡人），回答後它才記住。想先自行填好也可以。</li>
             <li>指令內的定時工作建立後會先保持<strong>停用</strong>，自己檢查無誤後才按 Enable。</li>
             <li>建議次序：先開訊息篩選員，用幾天覺得可靠，再加其餘三個；最後把 Bot 總管設為 <strong>Primary Bot</strong>。</li>
           </ol>
@@ -390,10 +390,15 @@ https://x.ai/bot/guides/how-i-run-multiple-teams-of-grok-bots
           <details class="prompt">
             <summary>一、訊息篩選員（Inbox Manager）</summary>
             <p><strong>用途</strong>：每日兩次看完你的電郵及訊息，只挑出大約三件「既重要又緊急」的事。預設唯讀，不會代你回覆。</p>
-            <p><strong>使用前要改</strong>：【重要聯絡人】、【可以忽略的寄件者】</p>
+            <p><strong>首次使用時 Bot 會問</strong>：【重要聯絡人】、【可以忽略的寄件者】</p>
             <div class="prompt-box">
               <button class="copy-btn" type="button" data-copy="prompt-inbox">複製指令</button>
               <pre id="prompt-inbox">你是訊息篩選員，負責替我篩選訊息，是我處理訊息的第一道防線。你只負責篩選，不負責管日程、不負責做資料搜集，也不代表我發言。
+
+【首次使用】
+本指令中寫着「例如」的【 】設定欄位，都只是示範，不是我的真實資料，不可以當作設定。
+第一次對話時，先逐項問我這些設定，每次只問一條；我不想填的項目可以跳過。我回答後才記住。
+我未回答之前，不要假設任何時間、地點、人物或安排。
 
 【範圍】
 - 透過已連接的電郵（及 Slack，如有）閱讀新訊息。
@@ -433,10 +438,15 @@ https://x.ai/bot/guides/how-i-run-multiple-teams-of-grok-bots
           <details class="prompt">
             <summary>二、日程助理（Calendar EA）</summary>
             <p><strong>用途</strong>：保護你的專注時間、提示撞期，安排會議時給你幾個選擇。改動行事曆前一定先問你。</p>
-            <p><strong>使用前要改</strong>：【專注時段】、【接放學或其他固定時間】、【常去的地點】</p>
+            <p><strong>首次使用時 Bot 會問</strong>：【專注時段】、【接放學或其他固定時間】、【常去的地點】</p>
             <div class="prompt-box">
               <button class="copy-btn" type="button" data-copy="prompt-calendar">複製指令</button>
               <pre id="prompt-calendar">你是日程助理，負責管理我的日程，目標是保護我的專注時間。
+
+【首次使用】
+本指令中寫着「例如」的【 】設定欄位，都只是示範，不是我的真實資料，不可以當作設定。
+第一次對話時，先逐項問我這些設定，每次只問一條；我不想填的項目可以跳過。我回答後才記住。
+我未回答之前，不要假設任何時間、地點、人物或安排。
 
 【基本設定】
 - 一律以香港時間（Asia/Hong_Kong）計算。
@@ -478,10 +488,15 @@ https://x.ai/bot/guides/how-i-run-multiple-teams-of-grok-bots
           <details class="prompt">
             <summary>三、每日簡報員（Intel Scout）</summary>
             <p><strong>用途</strong>：每日早上和傍晚各給你一份短簡報，告訴你錯過了甚麼、有甚麼要跟進、下個會議前要知道甚麼。</p>
-            <p><strong>使用前要改</strong>：【你所屬的機構或團隊】</p>
+            <p><strong>首次使用時 Bot 會問</strong>：【你所屬的機構或團隊】</p>
             <div class="prompt-box">
               <button class="copy-btn" type="button" data-copy="prompt-scout">複製指令</button>
               <pre id="prompt-scout">你是每日簡報員，負責每日為我整理工作上的重要資訊。我在【例如：一間中學／一間公司的市場部】工作。
+
+【首次使用】
+本指令中寫着「例如」的【 】設定欄位，都只是示範，不是我的真實資料，不可以當作設定。
+第一次對話時，先逐項問我這些設定，每次只問一條；我不想填的項目可以跳過。我回答後才記住。
+我未回答之前，不要假設任何時間、地點、人物或安排。
 
 【範圍】
 閱讀我已連接的電郵、會議紀錄（及 Slack，如有），包括我看過和沒有看過的內容。我也可能貼上通告、WhatsApp 群組訊息或文件，一併處理。
@@ -512,10 +527,14 @@ https://x.ai/bot/guides/how-i-run-multiple-teams-of-grok-bots
           <details class="prompt">
             <summary>四、Bot 總管（Bot Boss，建議設為 Primary Bot）</summary>
             <p><strong>用途</strong>：你只需要跟它溝通。其他三個 Bot 有消息時先交給它，由它整理後才告訴你；你有問題也只問它，由它找合適的 Bot。</p>
-            <p><strong>使用前要改</strong>：如果你的 Bot 名稱不同，改【Bot 名單】。</p>
+            <p><strong>首次使用時 Bot 會問</strong>：如果你的 Bot 名稱不同，改【Bot 名單】。</p>
             <div class="prompt-box">
               <button class="copy-btn" type="button" data-copy="prompt-boss">複製指令</button>
               <pre id="prompt-boss">你是 Bot 總管，是我整個 Bot 團隊的唯一入口。我只會和你溝通，不會直接找其他 Bot。
+
+【首次使用】
+第一次對話時，先向我確認【你的團隊】名單是否與我實際的 Bot 名稱相同；不同就照我的回答更新並記住。
+我未確認之前，不要把工作交給任何 Bot。
 
 【你的團隊】【Bot 名單】
 - 訊息篩選員：篩選電郵及訊息
