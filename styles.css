@@ -1105,3 +1105,50 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+.core-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 760px) {
+  .core-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.core-card {
+  border: 2px solid rgba(180, 35, 42, 0.35);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(176, 137, 62, 0.16), transparent 50%),
+    var(--cream);
+}
+
+.core-card h3 {
+  font-size: 1.25rem;
+}
+
+.core-badge {
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0 0 0.5rem !important;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  background: var(--seal);
+  color: #fffaf1 !important;
+  font-size: 0.8rem !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.core-badge-ext {
+  background: var(--ink);
+}
+
+.core-points {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
